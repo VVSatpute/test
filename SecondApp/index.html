@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body ng-controller="myController">
+
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="/" class="navbar-brand">Contants Managers</a>
+		</div>
+		<div class="collapse navbar-collapse" id="nav-toggle">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Browse</a></li>
+				<li><a href="/add">Add Contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<input type="text" placeholder="search" class="form-control">
+			</form>
+		</div>
+
+	</nav>
+
+	<div class="container" ng-init="username='Vinod'">
+		<h1 ng-hide="isHidden">Hello </h1> <h1 ng-show="isHidden">{{username}}</h1>
+		<div class="row">
+			<div class="col-sm-8">
+				<button ng-click="clickHandler()">Click Me</button>
+			</div>
+			<div class="col-sm-4">
+				This is our sidebar area
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</body>
+</html>
