@@ -1,1 +1,3 @@
-This is the practicals created from Bootstrap and Angular Book. 
+This is the practicals/examples created from Bootstrap and Angular Book. 
+
+
