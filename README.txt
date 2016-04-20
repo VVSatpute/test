@@ -1,1 +1,1 @@
-This is the demos created from Bootstrap and Angular Book. 
+This is the examples created from Bootstrap and Angular Book. 
